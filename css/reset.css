@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    font-family: "Instrument Sans", "Noto Sans KR", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+img,
+svg,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}

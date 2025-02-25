@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- js 연결 -->
+    <script src="./js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>INNISFREE_웹포폴</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 1. 헤더 -->
+      <header class="header_area">
+        <div class="contain">
+          <!-- 로고 -->
+          <div class="logo_icon">
+            <svg
+              fill="#001254"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1651.01 227.76"
+            >
+              <path
+                class="cls-2"
+                d="M1329.73,130.52c-25.33,0-50.66.07-75.98-.07-3.89-.02-5.19.73-4.52,4.98,3.88,24.66,14.09,44.97,38.94,54.13,18.35,6.76,36.95,6.08,54.9-2.26,9.05-4.21,15.78-11.06,20.28-19.92,1.4-2.75,2.96-3.83,6.08-3.77,10.49.2,21,.31,31.49-.03,4.92-.16,4.52,1.6,3.08,5.03-11.77,28.06-32.17,46.62-61.49,54.63-26.02,7.1-51.93,5.65-76.73-5.14-27.46-11.94-45.74-32.93-54.96-61.21-9.27-28.44-8.98-57.29,2.03-85.14,13.78-34.88,40.45-54.87,77.09-61.4,22.92-4.08,45.57-2.6,66.95,7.38,32.26,15.05,48.59,41.59,53.51,76.02,1.49,10.44,1.14,20.93.76,31.42-.14,3.91-1.38,5.55-5.93,5.5-25.16-.3-50.32-.14-75.48-.14ZM1309.01,98.41c18.49,0,36.98-.06,55.47.06,3.1.02,4.45-.48,3.95-4.08-5.11-37.16-29.88-57.4-68.32-51.43-27.02,4.19-44.68,23.3-49.98,51.36-.67,3.53.06,4.18,3.4,4.15,18.49-.13,36.98-.06,55.47-.06Z"
+              />
+              <path
+                class="cls-2"
+                d="M1568.66,122.31c-25.32,0-50.65,0-75.97,0-2.18,0-4.89-.84-4.28,3.23,2.92,19.72,9.68,37.33,26.68,49.43,19.2,13.67,53.18,14.2,72.5,1.22,6.95-4.67,12.22-10.77,15.91-18.2,1.05-2.12,2.31-2.77,4.57-2.74,10.99.1,21.99.19,32.98-.03,4.12-.08,3.84,1.37,2.63,4.34-11.93,29.33-33.13,48.52-63.82,55.9-32.99,7.93-64.62,4.06-92.85-16.13-24.37-17.43-37.47-41.91-41.51-71.22-3.2-23.29-1.55-46.29,8.14-68.02,14.36-32.22,39.62-51.24,73.95-57.64,28.87-5.38,56.73-2.38,81.9,14.43,23.36,15.6,35.31,38.22,39.85,65.29,1.99,11.88,1.99,23.84,1.12,35.85-.25,3.47-1.46,4.39-4.83,4.37-25.66-.13-51.31-.07-76.97-.07ZM1549.17,90.25c18.32,0,36.64.04,54.95-.07,1.5,0,4.5,1.51,3.97-2.35-2.22-16.02-6.91-30.96-19.9-41.72-16.59-13.74-35.76-14.9-55.69-9.97-22.85,5.66-38.69,25.66-43.16,51.13-.58,3.29,1.3,3,3.36,2.99,18.82-.02,37.64-.01,56.45,0Z"
+              />
+              <path
+                class="cls-1"
+                d="M130.81,51.94c5.44-8.24,10.31-15.05,16.59-20.71,20.04-18.05,43.86-24.32,70.22-22.43,15.79,1.13,30.33,5.7,42.49,16.42,13.18,11.62,20.01,26.42,21.34,43.68.75,9.78.58,19.64.59,29.46.06,39.82-.06,79.63.13,119.45.02,4.49-1.22,5.57-5.56,5.43-10.49-.33-21-.32-31.49,0-4.41.13-5.81-.89-5.79-5.61.2-43.31.1-86.63.15-129.95,0-4.69-.39-9.34-1.39-13.89-3.79-17.27-14.22-26.51-34.17-28.9-34.6-4.16-61.67,16.09-68.76,45.24-1.74,7.17-2.3,14.47-2.31,21.79-.06,34.99-.16,69.97.12,104.96.04,5.44-1.64,6.54-6.63,6.36-10.32-.37-20.67-.37-30.99,0-4.55.17-5.45-1.27-5.44-5.56.14-66.47.09-132.95.09-199.42,0-.67.06-1.34-.01-2-.31-2.75.72-3.81,3.64-3.77,11.16.14,22.33.18,33.49-.02,3.37-.06,3.78,1.38,3.75,4.18-.12,11.25-.05,22.5-.05,35.27Z"
+              />
+              <path
+                class="cls-1"
+                d="M386.78,52c5.59-8.63,10.77-15.62,17.34-21.48,27.3-24.34,73.82-29.66,103.53-11.45,18.69,11.46,28.1,28.81,29.82,50.35,1.32,16.45.47,32.97.52,49.46.1,32.82-.09,65.64.16,98.46.04,4.97-1.41,6.07-6.12,5.91-10.49-.37-21-.32-31.49-.01-4.11.12-5.25-.92-5.24-5.14.17-43.48.09-86.96.13-130.45,0-4.69-.4-9.34-1.4-13.89-3.8-17.27-14.23-26.49-34.2-28.87-34.55-4.13-61.63,16.06-68.74,45.28-1.74,7.17-2.29,14.47-2.3,21.8-.05,35.32-.09,70.64.07,105.96.02,4.02-.81,5.45-5.12,5.32-11.16-.32-22.33-.2-33.49-.05-3.08.04-4.38-.57-4.37-4.03.09-67.47.09-134.94.01-202.42,0-3.22.85-4.33,4.22-4.26,10.83.21,21.66.19,32.49.01,3.25-.05,4.3.87,4.24,4.21-.2,11.24-.08,22.49-.08,35.3Z"
+              />
+              <path
+                class="cls-2"
+                d="M679.02,157.94c5.5,0,11,.07,16.49-.03,1.94-.04,3.12.45,3.56,2.5,5.02,23.24,21.6,32.28,43.24,34.5,11.45,1.17,22.98,1.04,34.13-2.66,15.48-5.14,22.95-17.62,19.07-31.87-1.91-7.03-6.52-11.84-12.83-15.15-11.82-6.2-24.98-7.85-37.71-10.91-14.88-3.58-29.77-6.91-43.57-13.95-22.76-11.6-34.43-29.72-32.83-55.53,1.53-24.76,15.39-40.95,37.76-49.18,29.17-10.73,58.9-10.61,87.67,1.75,21.5,9.23,34.48,25.96,38.29,49.4.56,3.45-.12,4.63-3.88,4.54-10.49-.26-20.99-.1-31.49-.08-2.01,0-3.79.26-4.46-2.6-3.49-15.02-13.99-22.94-28.2-26.4-13.86-3.37-27.81-3.28-41.22,2.09-14.38,5.76-19.72,20.69-12.19,33.04,3.26,5.35,8.42,8.45,14.01,10.78,15.13,6.31,31.29,8.95,47.04,13.03,13.77,3.56,27.08,8,38.82,16.33,23.02,16.34,31.77,46.02,20.83,71.82-6.82,16.1-19.78,25.93-35.85,31.05-33,10.51-66.01,10.4-97.77-4.51-21.85-10.25-34.2-28.37-38.36-52.12-.73-4.18-.23-6.48,4.95-5.95,4.78.49,9.65.1,14.48.11Z"
+              />
+              <path
+                class="cls-1"
+                d="M867,119.18c0-32.98.08-65.96-.1-98.94-.02-4.15,1.04-5.24,5.21-5.23,45.48.16,90.96.15,136.45,0,4.09-.01,5.45.9,5.26,5.15-.36,8.15-.32,16.33,0,24.48.15,3.88-1.15,4.64-4.79,4.63-30.82-.14-61.64,0-92.46-.18-4.08-.02-5.3.86-5.23,5.11.28,16.32.25,32.65.01,48.97-.06,4.03.77,5.29,5.08,5.26,28.49-.22,56.98,0,85.47-.22,4.42-.03,5.73,1.03,5.49,5.49-.4,7.64-.36,15.33-.02,22.98.2,4.39-.83,5.89-5.61,5.85-28.32-.25-56.64-.01-84.96-.24-4.42-.03-5.5,1.05-5.46,5.46.24,23.32.01,46.64.21,69.95.03,4.14-.62,5.76-5.31,5.58-10.98-.42-21.99-.09-32.98-.15-6.98-.03-6.23,1.02-6.24-6.5-.03-32.48-.01-64.96-.01-97.44Z"
+              />
+              <path
+                class="cls-2"
+                d="M1096.97,49.99c6.36-11.12,13.39-21.06,23.57-28.45,15.31-11.1,32.5-14.58,51.08-12.52,3.17.35,4.19,1.56,4.14,4.72-.17,10.99-.15,21.98-.01,32.98.04,2.88-.73,3.6-3.67,3.23-10.82-1.35-21.65-.92-32.26,1.64-22.34,5.39-35.72,20.41-39.39,43.71-.94,5.94-1.29,11.91-1.29,17.91,0,34.81-.07,69.62.09,104.43.02,4.16-.64,5.8-5.35,5.62-11.15-.41-22.32-.22-33.48-.07-3.06.04-4.35-.54-4.34-4.03.1-67.45.09-134.9.02-202.36,0-3.15.7-4.39,4.12-4.32,10.82.21,21.66.23,32.48,0,3.72-.08,4.4,1.35,4.35,4.64-.17,10.96-.06,21.92-.06,32.88Z"
+              />
+              <path
+                class="cls-1"
+                d="M.09,118.73c0-32.81.07-65.61-.09-98.42-.02-4.04.82-5.43,5.13-5.31,11.65.32,23.32.23,34.98.03,3.34-.06,4.52.64,4.51,4.29-.12,66.44-.12,132.89.01,199.33,0,3.92-1.2,4.62-4.78,4.56-11.66-.22-23.32-.28-34.98.02-4.14.11-4.88-1.35-4.86-5.08.13-33.14.07-66.28.07-99.42Z"
+              />
+              <path
+                class="cls-1"
+                d="M630.63,118.97c0,33.13-.08,66.25.1,99.38.02,4.03-1.17,4.95-5,4.87-11.82-.25-23.64-.18-35.46-.03-2.95.04-4.03-.6-4.02-3.81.09-66.92.09-133.83.01-200.75,0-2.93.98-3.6,3.72-3.57,12.15.13,24.31.21,36.46-.04,3.71-.07,4.27,1.29,4.26,4.57-.11,33.13-.07,66.25-.07,99.38Z"
+              />
+            </svg>
+          </div>
+
+          <div class="menubar">
+            <div class="menubar_box">
+              <!-- 서치 -->
+              <div class="search_bar">
+                <input type="search" placeholder="원하시는 상품이 있나요?" />
+                <a href="#none" class="search_iocon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- 탭 -->
+              <div class="mainmenu_tab">
+                <ul class="main_menu">
+                  <li data-tab="tab1">
+                    <a href="#none" class="menu">SKINCARE</a>
+                  </li>
+                  <li data-tab="tab2">
+                    <a href="#none" class="menu">MAKEUP</a>
+                  </li>
+                  <li data-tab="tab3">
+                    <a href="#none" class="menu">BODY&HAIR</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 아이콘 -->
+              <div class="icon_box">
+                <!-- 햄버거버튼 -->
+                <a href="#none" id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+
+                <div class="menubar_icon login_icon">
+                  <a href="#none" class="login_btn">
+                    <svg viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.47579 7.13921L11.8449 10.1639C12.0517 10.3495 12.0517 10.6505 11.8449 10.8361L8.47579 13.8608C8.26904 14.0464 7.93384 14.0464 7.72709 13.8608C7.52035 13.6752 7.52035 13.3742 7.72709 13.1886L10.1925 10.9753L1 10.9753L1 10.0247L10.1925 10.0247L7.72709 7.81137C7.52035 7.62576 7.52035 7.32482 7.72709 7.13921C7.93384 6.9536 8.26904 6.9536 8.47579 7.13921Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.64359 7.04619C7.89784 6.81794 8.30505 6.81794 8.5593 7.04619L11.9284 10.0709C12.1905 10.3062 12.1905 10.6938 11.9284 10.9291L8.5593 13.9538C8.30505 14.1821 7.89784 14.1821 7.64359 13.9538C7.38151 13.7185 7.38151 13.3309 7.64359 13.0956L9.86613 11.1003L1 11.1003C0.930964 11.1003 0.875 11.0443 0.875 10.9753L0.875 10.0247C0.875 9.95568 0.930964 9.89971 1 9.89971L9.86613 9.89971L7.64359 7.90438C7.38151 7.6691 7.38151 7.28147 7.64359 7.04619ZM8.39229 7.23222C8.23304 7.08926 7.96984 7.08926 7.8106 7.23222C7.65918 7.36817 7.65918 7.58241 7.8106 7.71835L10.276 9.9317C10.3145 9.96629 10.3277 10.0211 10.3092 10.0694C10.2907 10.1178 10.2443 10.1497 10.1925 10.1497L1.125 10.1497V10.8503L10.1925 10.8503C10.2443 10.8503 10.2907 10.8822 10.3092 10.9306C10.3277 10.9789 10.3145 11.0337 10.276 11.0683L7.8106 13.2816C7.65918 13.4176 7.65918 13.6318 7.8106 13.7678C7.96984 13.9107 8.23304 13.9107 8.39229 13.7678L11.7614 10.7431C11.9129 10.6071 11.9129 10.3929 11.7614 10.2569L8.39229 7.23222Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.09091 2.125H15.9091V17.875H6.09091V15.625H5V19H17V1H5V4.375H6.09091V2.125Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.86719 1C4.86719 0.92665 4.92665 0.867188 5 0.867188H17C17.0734 0.867188 17.1328 0.92665 17.1328 1V19C17.1328 19.0734 17.0734 19.1328 17 19.1328H5C4.92665 19.1328 4.86719 19.0734 4.86719 19V15.625C4.86719 15.5517 4.92665 15.4922 5 15.4922H6.09091C6.16426 15.4922 6.22372 15.5517 6.22372 15.625V17.7422H15.7763V2.25781H6.22372V4.375C6.22372 4.44835 6.16426 4.50781 6.09091 4.50781H5C4.92665 4.50781 4.86719 4.44835 4.86719 4.375V1ZM5.13281 1.13281V4.24219H5.9581V2.125C5.9581 2.05165 6.01756 1.99219 6.09091 1.99219H15.9091C15.9824 1.99219 16.0419 2.05165 16.0419 2.125V17.875C16.0419 17.9484 15.9824 18.0078 15.9091 18.0078H6.09091C6.01756 18.0078 5.9581 17.9484 5.9581 17.875V15.7578H5.13281V18.8672H16.8672V1.13281H5.13281Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="menubar_icon my_icon">
+                  <a href="#none" class="my_btn">
+                    <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.4375 7.93743C11.2152 7.93743 12.6562 6.49636 12.6562 4.71871C12.6562 2.94106 11.2152 1.49999 9.4375 1.49999C7.65983 1.49999 6.21875 2.94106 6.21875 4.71871C6.21875 6.49636 7.65983 7.93743 9.4375 7.93743ZM9.4375 9.43742C12.0436 9.43742 14.1562 7.32478 14.1562 4.71871C14.1562 2.11264 12.0436 0 9.4375 0C6.83141 0 4.71875 2.11264 4.71875 4.71871C4.71875 7.32478 6.83141 9.43742 9.4375 9.43742ZM18.875 18.875V13.0348V11.5348H17.375H1.5H0V13.0348V18.875H1.5V13.0348H17.375V18.875H18.875Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="menubar_icon cart_icon">
+                  <a href="#none" class="cart_btn">
+                    <svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.5 18H15.5L13.625 5H2.375L0.5 18ZM1.65458 17H14.3454L12.7589 6H3.24112L1.65458 17Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.26677 4.875H13.7333L15.6444 18.125H0.355713L2.26677 4.875ZM2.4833 5.125L0.644358 17.875H15.3557L13.5168 5.125H2.4833ZM3.13289 5.875H12.8672L14.4898 17.125H1.51029L3.13289 5.875ZM3.34942 6.125L1.79894 16.875H14.2011L12.6507 6.125H3.34942Z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 5H9.75V2.99995C9.75 2.03347 8.9665 1.24998 8 1.24998C7.0335 1.24998 6.25 2.03347 6.25 2.99995V4.99992L5 5V2.99995C5 1.34312 6.34315 0 8 0C9.65685 0 11 1.34312 11 2.99995V5Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2. 서브메뉴 -->
+      <div class="submenu_box">
+        <ul id="tab1" class="sub_box skincare">
+          <li class="menu_left">
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">BY CATEGORY</a>
+              <a href="#none" class="submenu_text"
+                >Cleansers & Makeup Removers</a
+              >
+              <a href="#none" class="submenu_text">Toners & Mists</a>
+              <a href="#none" class="submenu_text">Creams</a>
+              <a href="#none" class="submenu_text">Serums & Essences</a>
+              <a href="#none" class="submenu_text">Suncare</a>
+              <a href="#none" class="submenu_text">Masks</a>
+              <a href="#none" class="submenu_text">Exclusive Sets</a>
+            </div>
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">BY SKIN BENEFIT</a>
+              <a href="#none" class="submenu_text">Hydration</a>
+              <a href="#none" class="submenu_text">Brightening</a>
+              <a href="#none" class="submenu_text">Pore Care</a>
+              <a href="#none" class="submenu_text">Age Defying</a>
+              <a href="#none" class="submenu_text">Troubled Skin</a>
+              <a href="#none" class="submenu_text">Dullness, Tired Skin</a>
+            </div>
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">BY JEJU INGREDIENTS</a>
+              <a href="#none" class="submenu_text">Collagen</a>
+              <a href="#none" class="submenu_text">Green Tea</a>
+              <a href="#none" class="submenu_text">Vitamin C</a>
+              <a href="#none" class="submenu_text">Retinol Cica</a>
+              <a href="#none" class="submenu_text">Apple Seed</a>
+              <a href="#none" class="submenu_text">Black Tea</a>
+              <a href="#none" class="submenu_text">Volcanic Pore</a>
+              <a href="#none" class="submenu_text">Bija</a>
+              <a href="#none" class="submenu_text">Cherry Blossom</a>
+              <a href="#none" class="submenu_text">Forest For Men</a>
+              <a href="#none" class="submenu_text">Perfect 9</a>
+              <a href="#none" class="submenu_text">Orchid</a>
+              <a href="#none" class="submenu_text">Olive</a>
+              <a href="#none" class="submenu_text">Blueberry</a>
+            </div>
+          </li>
+          <li class="menu_right">
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu1-1.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu1-2.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu1-3.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu1-4.jpg" alt=""
+            /></a>
+          </li>
+        </ul>
+
+        <ul id="tab2" class="sub_box makeup">
+          <li class="menu_left">
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">FACE</a>
+              <a href="#none" class="submenu_text">Cushion</a>
+              <a href="#none" class="submenu_text">Foundation</a>
+              <a href="#none" class="submenu_text">Primer</a>
+              <a href="#none" class="submenu_text">Powder</a>
+            </div>
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">LIPS</a>
+              <a href="#none" class="submenu_text">Lipstick</a>
+              <a href="#none" class="submenu_text">Lip Balm & Treatment</a>
+            </div>
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">EYES</a>
+              <a href="#none" class="submenu_text">Eyebrows</a>
+              <a href="#none" class="submenu_text">Eyeshadow</a>
+            </div>
+          </li>
+          <li class="menu_right">
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu2-1.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu2-2.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu2-3.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu2-4.jpg" alt=""
+            /></a>
+          </li>
+        </ul>
+
+        <ul id="tab3" class="sub_box body&hair">
+          <li class="menu_left">
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">BODY CARE</a>
+              <a href="#none" class="submenu_text">Body Lotions</a>
+              <a href="#none" class="submenu_text">Body Cleansers</a>
+              <a href="#none" class="submenu_text">Body Mists</a>
+            </div>
+            <div class="submenu_detail">
+              <a href="#none" class="submenu_title">HAIR CARE</a>
+              <a href="#none" class="submenu_text">Hair Shampoo</a>
+              <a href="#none" class="submenu_text">Hair Treatment</a>
+              <a href="#none" class="submenu_text">Hair Serum</a>
+            </div>
+          </li>
+          <li class="menu_right">
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu3-1.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu3-2.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu3-3.jpg" alt=""
+            /></a>
+            <a href="#none" class="submenu_imgbox"
+              ><img src="./img/submenu_menu3-4.jpg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <!-- 3. 배너 -->
+        <div class="banner">
+          <div class="contain">
+            <div class="banner_box banner_box1">
+              <div class="banner_textbox">
+                <div class="banner_title">
+                  <h1>
+                    Innisfree's brand name is derived from W.B. Yeats' poem ‘The
+                    Lake Isle of Innisfree’
+                  </h1>
+                </div>
+                <div class="banner_content">
+                  <p class="banner_subtext">
+                    이니스프리는 2000년 아모레퍼시픽에 의해 출시된 브랜드로,
+                    아모레퍼시픽의 첫 번째 친환경 브랜드로 마케팅되었습니다.
+                    이니스프리는 건강하고 합리적인 가격의 뷰티 제품을 강조하는
+                    브랜드 컨셉으로 잘 알려져 있으며, 제주도에서 책임감 있게
+                    조달된 성분을 사용하여 저렴한 가격에 제품을 제공합니다.
+                  </p>
+                </div>
+                <ul class="ingredients_text">
+                  <li class="ingredients1">Hyaluronic Acid</li>
+                  <li class="ingredients2">green tea</li>
+                  <li class="ingredients3">retinol</li>
+                  <li class="ingredients4">Cica</li>
+                </ul>
+              </div>
+
+              <div class="banner_imgbox">
+                <div class="banner_img">
+                  <img src="./img/banner_img1.png" alt="" />
+                </div>
+                <div class="banner_img">
+                  <img src="./img/banner_img2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="banner_box banner_box2">
+              <div class="banner_img3">
+                <img src="./img/banner_img3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. sec1 -->
+        <section class="section1">
+          <div class="sec_1box">
+            <div class="sec1_imgbox">
+              <a href="#none" class="boximg">
+                <img src="./img/sec1_img01.png" alt="" />
+              </a>
+              <a href="#none" class="boximg">
+                <img src="./img/sec1_img02.png" alt="" />
+              </a>
+            </div>
+            <div class="sec1_textbox">
+              <a href="#none" class="sec1_aboutbtn">
+                <p>About View Detail Page</p>
+                <div class="sec1_arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <p class="sec1_maintext">
+                자연의 힘으로 발견된 섬의 스킨케어. 무한한 자연의 힘이 담긴 생기
+                넘치는 식물들, 생명을 주는 토양이 풍부한 대지, 그리고
+                알려지지않은 에너지가 가득한 청록색 바다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. sec2 -->
+        <section class="section2">
+          <div class="comtain">
+            <div class="sec2_wrap">
+              <div class="sec2_greentea textbox1">
+                <div class="sec2_tb">
+                  <h1 class="sec2_title">
+                    “green tea” the origin of innisfree
+                  </h1>
+                  <p class="sec2_subtext">
+                    제주는 축복받은 자연 환경의 기적적인 생명력으로 가득
+                    차있습니다. 이 섬의 토양, 빛, 물, 공기, 안개는 이니스프리의
+                    첫 시작이었던 녹차 농장에서 서로 조화를 이루고 있습니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="sec2_greentea textbox2">
+                <div class="sec2_tb">
+                  <h1 class="sec2_title">Farm to Face Beauty “Green Tea”</h1>
+                  <p class="sec2_subtext">
+                    '피부에만 전념하는 녹차 품종'으로, 이 세상에 약 2만 가지
+                    품종 중에서 기후 문제와 병충해를 포함한 수많은 해를 견디면서
+                    이상적인 효능을 발휘할 수 있는 유일무이한 종류입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="sec2_wrap">
+              <div class="sec2_greentea textbox3">
+                <div class="sec2_tb">
+                  <h1 class="sec2_title">“green tea”</h1>
+                  <p class="sec2_subtext">
+                    거친 돌과 가시덤불로 가득한 황무지를 자신의 손으로 비옥한 차
+                    농장으로 바꾼 창립자의 타협하지 않는 끈기와 개척 정신은
+                    오늘날 '건강한 피부를 실현하기 위한 끝없는 시도와 연구'에
+                    헌신하는 이니스프리의 기초가 되었습니다.'
+                  </p>
+                </div>
+              </div>
+
+              <div class="sec2_greentea textbox4">
+                <div class="sec2_tb">
+                  <h1 class="sec2_title">
+                    Enjoy being you, Be free with INNISFREE
+                  </h1>
+                  <p class="sec2_subtext">
+                    "이니스프리와 함께 단순한 외적인 매력을 넘어, 당신의 모든
+                    아름다운 순간을 발견하세요.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="loopmotion">
+            <img src="./img/loopnaimation.svg" alt="" />
+            <p class="sec2_secondtext">green tea heritage</p>
+          </div>
+        </section>
+
+        <!-- 6. sec3 -->
+        <section class="section3">
+          <div class="sec3_main_title">
+            <a href="#none" class="maintext">skin concerns</a>
+          </div>
+
+          <div class="contain">
+            <div class="sec3_imgbox">
+              <img src="./img/sec3_img01.png" alt="" />
+            </div>
+
+            <div class="sec3_content">
+              <h1 class="sec3_title">
+                Enough with skin concerns we recommend personalized products for
+                you
+              </h1>
+
+              <div class="selection_box">
+                <div class="sec3_textlist">
+                  <div class="selection_menu">
+                    Hydration / Moisturization / Dehydration
+                  </div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Pores / Sebum / Blackhead</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Wrinkles / Elasticity</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Trouble / Repair</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Dead skin / Skin texture</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Spots / Skin tone</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Nutrition / Total anti-aging</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="sec3_textlist">
+                  <div class="selection_menu">Soothing / Sensitivity</div>
+                  <a href="#none" class="sec3_arroew_btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <video
+            class="sec3_video"
+            src="./img/sec3_video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </section>
+
+        <!-- 7. sec4 -->
+        <section class="section4_swiper">
+          <h1 class="sec4_title">
+            Discover 'INNISFREE's main products made using our special green tea, right now
+          </h1>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드1 -->
+              <div class="swiper-slide slider slider1">
+                <img src="./img/sec4_slide1_hoverimg01.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox1">
+                  <h1 class="sec4_main_title">그린티 히알루론산 스킨</h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">13,300원</a>
+                      <span>30%</span>
+                      <p class="previous_price">19,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#저자극</a>
+                      <a href="#none" class="tag">#그린티</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.8(5,079)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드2 -->
+              <div class="swiper-slide slider slider2">
+                <img src="./img/sec4_slide1_hoverimg02.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox2">
+                  <h1 class="sec4_main_title">
+                    그린티 아미노 수분 클렌징 오일
+                  </h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">16,700원</a>
+                      <span>30%</span>
+                      <p class="previous_price">24,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#산뜻촉촉</a>
+                      <a href="#none" class="tag">#메이크업클렌징</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.8(2,906)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드3 -->
+              <div class="swiper-slide slider slider3">
+                <img src="./img/sec4_slide1_hoverimg03.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox3">
+                  <h1 class="sec4_main_title">그린티 히알루론산 미스트</h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">11,900원</a>
+                      <span>30%</span>
+                      <p class="previous_price">17,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#미스트</a>
+                      <a href="#none" class="tag">#수분미스트</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.8(2,370)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드4 -->
+              <div class="swiper-slide slider slider4">
+                <img src="./img/sec4_slide1_hoverimg04.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox4">
+                  <h1 class="sec4_main_title">그린티 아미노 수분 폼 클렌징</h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">9,750원</a>
+                      <span>25%</span>
+                      <p class="previous_price">13,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#저자극클렌징</a>
+                      <a href="#none" class="tag">#그린티</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.9(15,730)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드5 -->
+              <div class="swiper-slide slider slider5">
+                <img src="./img/sec4_slide1_hoverimg05.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox5">
+                  <h1 class="sec4_main_title">
+                    그린티 아미노 수분 클렌징 워터
+                  </h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">12,600원</a>
+                      <span>30%</span>
+                      <p class="previous_price">18,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#약산성클렌저</a>
+                      <a href="#none" class="tag">#저자극클렌저</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.8(3,591)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드6 -->
+              <div class="swiper-slide slider slider6">
+                <img src="./img/sec4_slide1_hoverimg06.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox6">
+                  <h1 class="sec4_main_title">그린티 히알루론산 수분크림</h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">20,250원</a>
+                      <span>25%</span>
+                      <p class="previous_price">27,000원</p>
+                    </div>
+
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#저자극</a>
+                      <a href="#none" class="tag">#그린티</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.9(18,201)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 슬라이드7 -->
+              <div class="swiper-slide slider slider7">
+                <img src="./img/sec4_slide1_hoverimg07.png" alt="" />
+
+                <!-- 텍스트박스 -->
+                <div class="sec4_textbox tbox7">
+                  <h1 class="sec4_main_title">그린티 씨드 히알루론산 세럼</h1>
+
+                  <!-- 가격 -->
+                  <div class="price_box">
+                    <div class="price">
+                      <a href="#none" class="sec4_main_price">23,250원</a>
+                      <span>25%</span>
+                      <p class="previous_price">31,000원</p>
+                    </div>
+                    <div class="cart_icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- 태그&순위 -->
+                  <div class="tag_ranking_box">
+                    <div class="tagbox">
+                      <a href="#none" class="tag">#속건조전용세럼</a>
+                      <a href="#none" class="tag">#순간흡수텍스쳐</a>
+                    </div>
+
+                    <div class="item_ranking">
+                      <div class="staricon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                          />
+                        </svg>
+                      </div>
+                      <span class="ranking">4.9(26,430)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. sec5 -->
+        <section class="section5">
+          <h1 class="sec5_main_title">Benefit Information</h1>
+          <div class="contain">
+            <div class="sec5_salebox">
+              <div class="image_box">
+                <a href="#none" class="sec5_image img1"
+                  ><img src="./img/sec5_img01.jpg" alt=""
+                /></a>
+                <a href="#none" class="sec5_image img2"
+                  ><img src="./img/sec5_img02.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="sec5_textbox">
+              <div class="sec5_box">
+                <h1 class="text_subtitle">subscribe to our newsletter</h1>
+                <p class="saletext">
+                  subscribe to our newsletters and get 15% off your first
+                  purchase!
+                </p>
+              </div>
+
+              <div class="detailbox">
+                <input type="search" placeholder="enter your emil" />
+
+                <!-- 체크박스 -->
+                <div class="ch_box">
+                  <input type="checkbox" id="check" />
+                  <label for="check">뉴스와 혜택 광고 동의</label>
+                </div>
+
+                <div class="terms_tb">
+                  <a href="#none" class="terms"
+                    >마케팅 커뮤니케이션을 위한 데이터 처리 방법에 대한 자세한
+                    정보는 개인정보처리방침을 확인하세요.</a
+                  >
+                </div>
+
+                <div class="btnbox">
+                  <a href="#none" class="sec5_btn">confirm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 9. 푸터 -->
+      <footer class="footer_area">
+        <div class="footerbox">
+          <!-- 자동재생 로고 -->
+          <div class="looplogo">
+            <span class="looplogo_animation">
+              <img src="./img/loopplay.svg" alt="" />
+            </span>
+            <span class="looplogo_animation">
+              <img src="./img/loopplay.svg" alt="" />
+            </span>
+          </div>
+
+          <div class="contain">
+            <!-- 푸터 텍스트 -->
+            <div class="footer_textbox">
+              <div class="footer_text">
+                <h1 class="foter_title"><a href="#none">ABOUT US</a></h1>
+                <p class="ft_text"><a href="#none">BRAND STORY</a></p>
+                <p class="ft_text"><a href="#none">GREEN TEA HERITAGE</a></p>
+                <p class="ft_text"><a href="#none">BETTER FOR EARTH</a></p>
+                <p class="ft_text"><a href="#none">CAREER</a></p>
+              </div>
+              <div class="footer_text">
+                <h1 class="foter_title"><a href="#none">STORES</a></h1>
+                <p class="ft_text"><a href="#none">FIND A STORE</a></p>
+              </div>
+              <div class="footer_text">
+                <h1 class="foter_title">
+                  <a href="#none">CUSTOMER SERVICE</a>
+                </h1>
+                <p class="ft_text"><a href="#none">FAQS</a></p>
+                <p class="ft_text"><a href="#none">CONTACT US</a></p>
+                <p class="ft_text"><a href="#none">REGISTER</a></p>
+                <p class="ft_text"><a href="#none">MY E-NNI FRIENDS</a></p>
+                <p class="ft_text"><a href="#none">REFERRAL PROGRAM</a></p>
+              </div>
+              <div class="footer_text">
+                <h1 class="foter_title"><a href="#none">INFORMATION</a></h1>
+                <p class="ft_text"><a href="#none">REFUND POLICY</a></p>
+                <p class="ft_text"><a href="#none">SHIPPING POLICY</a></p>
+                <p class="ft_text"><a href="#none">PRIVACY POLICY</a></p>
+                <p class="ft_text"><a href="#none">TERMS OF SERVICE</a></p>
+                <p class="ft_text"><a href="#none">TERM & CONDITION</a></p>
+              </div>
+            </div>
+            <div class="end_textbox">
+              <h1 class="title">HELLO, INNI-FRIENDS!</h1>
+              <p class="sub_text">Sign up for exclusive updates & discount!</p>
+              <div class="search_t">
+                <input type="search" placeholder="Enter your email address" />
+                <a href="#none" class="searchbtn">Subscribe</a>
+              </div>
+            </div>
+
+            <div class="address">
+              <ul class="address_text">
+                <li>Address: Level 25, 8 Cross Street 048424</li>
+                <li>Tel: +65-6737-4988</li>
+                <li>Mail: cs_innisfree@sg.amorepacific.com</li>
+                <li>AMOREPACIFIC Singapore Pte Ltd. All Rights Reserved.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- 상단이동버튼 -->
+      <div class="top_btn">
+        <img src="./img/topbtn.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
