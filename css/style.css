@@ -767,6 +767,9 @@ video {
     width: 24px;
     height: 14px;
   }
+  #hamburger span{
+    height: 2px;
+  }
   .header_area .logo_icon {
     width: 626px;
   }
@@ -928,6 +931,7 @@ video {
   }
   .header_area,
   .section1 .sec_1box,
+  .section2 .sec2_greentea .sec2_tb,
   .section5 .contain {
     padding: 20px;
   }
