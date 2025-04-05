@@ -55,24 +55,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
     this.classList.remove(`active`);
   });
 
-  window.addEventListener("scroll", function () {
-    // 현재 스크롤 위치 가져오기
-    let scrollTop = window.scrollY;
-    // 문서 전체 높이 계산 (뷰포트 제외)
-    let docHeight = document.body.scrollHeight - window.innerHeight;
-    // 스크롤 진행률 계산 (0 ~ 1)
-    let scrollPercent = scrollTop / docHeight;
-
-    // 동영상 컨테이너 선택
-    let videoContainer = document.querySelector(".video-container");
-
-    // 스케일 비율을 0에서 1로 설정, 최대값은 1
-    let scale = Math.min(scrollPercent, 1);
-
-    // 스케일 업데이트
-    videoContainer.style.transform = `scaleX(${scale})`;
-  });
-
   // swiper 열결V
   var swiper = new Swiper(".mySwiper", {
     loop: true,
